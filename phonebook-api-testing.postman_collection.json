@@ -1,0 +1,2235 @@
+{
+	"info": {
+		"_postman_id": "70b906bb-bf3b-44f0-bcd3-198905d61606",
+		"name": "phonebook-api-testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27026554"
+	},
+	"item": [
+		{
+			"name": "POST Requests - Acceptable Inputs",
+			"item": [
+				{
+					"name": "POST - Acceptable inputs 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Bruce Schneier\",\n    \"phoneNumber\" : \"12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Acceptable inputs 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Schneier, Bruce\",\n    \"phoneNumber\" : \"(703)111-2121\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Acceptable inputs 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Schneier, Bruce Wayne\",\n    \"phoneNumber\" : \"123-1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Acceptable inputs 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"O’Malley, John F.\",\n    \"phoneNumber\" : \"+1(703)111-2121\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Acceptable inputs 5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John O’Malley-Smith\",\n    \"phoneNumber\" : \"+32 (21) 212-2324\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Acceptable inputs 6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Cher\",\n    \"phoneNumber\" : \"1(703)123-1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Acceptable inputs 7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Jonathan Moore\",\n    \"phoneNumber\" : \"011 701 111 1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Acceptable inputs 8",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Allison\",\n    \"phoneNumber\" : \"12345.12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Acceptable inputs 9",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Axel Martinez\",\n    \"phoneNumber\" : \"011 1 703 111 1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - My acceptable inputs 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John Marshall\",\n    \"phoneNumber\" : \"682-100-1000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - My acceptable inputs 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Bautista, Alberto\",\n    \"phoneNumber\" : \"+1 613-555-0178\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - My acceptable inputs 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Bautista, Alberto S.\",\n    \"phoneNumber\" : \"+44 1632 960157\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - My acceptable inputs 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Charlotte\",\n    \"phoneNumber\" : \"+353209120421\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST Requests - Unacceptable Inputs",
+			"item": [
+				{
+					"name": "POST - Unacceptable inputs 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Ron O’’Henry\",\n    \"phoneNumber\":\"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Unacceptable inputs 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Ron O’Henry-Smith-Barnes\",\n    \"phoneNumber\":\"1/703/123/1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Unacceptable inputs 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"L33t Hacker\",\n    \"phoneNumber\":\"Nr 102-123-1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Unacceptable inputs 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"<Script>alert(“XSS”)</Script>\",\n    \"phoneNumber\":\"<script>alert(“XSS”)</script>\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Unacceptable inputs 5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Brad Everett Samuel Smith\",\n    \"phoneNumber\":\"7031111234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Unacceptable inputs 6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"select * from users;\",\n    \"phoneNumber\":\"+1234 (201) 123-1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Unacceptable inputs 7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Jane Doe\",\n    \"phoneNumber\":\"(001) 123-1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Unacceptable inputs 8",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"John Smith\",\n    \"phoneNumber\":\"+01 (703) 123-1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Unacceptable inputs 9",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"James\",\n    \"phoneNumber\":\"(703) 123-1234 ext 204\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - My unacceptable inputs 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"John-Martin\",\n    \"phoneNumber\":\"12345#\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - My unacceptable inputs 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"John Dale.\",\n    \"phoneNumber\":\"12345; DELETE from phonebook WHERE name='John Dale.';\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - My unacceptable inputs 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"John;#\",\n    \"phoneNumber\":\"+7777777777 77777777\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - My unacceptable inputs 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"=-40=35/43[o5-43 4/'53.';4k56;\",\n    \"phoneNumber\":\"=-40=35/43[o5-43 4/'53.';4k56;\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT Request deleteByName - Acceptable Inputs",
+			"item": [
+				{
+					"name": "deleteByName - Acceptable inputs 1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Bruce Schneier\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - Acceptable inputs 2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Schneier, Bruce\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - Acceptable inputs 3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Schneier, Bruce Wayne\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - Acceptable inputs 4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"O’Malley, John F.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - Acceptable inputs 5",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John O’Malley-Smith\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - Acceptable inputs 6",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Cher\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - Acceptable inputs 7",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Jonathan Moore\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - Acceptable inputs 8",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Allison\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - Acceptable inputs 9",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Axel Martinez\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - My Acceptable inputs 1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John Marshall\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - My Acceptable inputs 2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Bautista, Alberto\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - My Acceptable inputs 3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Bautista, Alberto S.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - My Acceptable inputs 4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Charlotte\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT Request deleteByName - Unacceptable Inputs",
+			"item": [
+				{
+					"name": "deleteByName - Unacceptable inputs 1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Ron O’’Henry\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - Unacceptable inputs 2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Ron O’Henry-Smith-Barnes\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - Unacceptable inputs 3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"L33t Hacker\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - Unacceptable inputs 4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"<Script>alert(“XSS”)</Script>\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - Unacceptable inputs 5",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Brad Everett Samuel Smith\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - Unacceptable inputs 6",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"select * from users;\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - My unacceptable inputs 1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"John-Martin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - My unacceptable inputs 2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"John Dale.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - My unacceptable inputs 3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"John;#\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName - My unacceptable inputs 4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"=-40=35/43[o5-43 4/'53.';4k56;\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByName"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT Request deleteByNumber - Acceptable inputs",
+			"item": [
+				{
+					"name": "deleteByNumber - Acceptable inputs 1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"phoneNumber\" : \"12345\" \n}\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - Acceptable inputs 2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"phoneNumber\" : \"(703)111-2121\" \n}\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - Acceptable inputs 3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"phoneNumber\" : \"123-1234\" \n}\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - Acceptable inputs 4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"phoneNumber\" : \"+1(703)111-2121\" \n}\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - Acceptable inputs 5",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"phoneNumber\" : \"+32 (21) 212-2324\" \n}\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - Acceptable inputs 6",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"phoneNumber\" : \"1(703)123-1234\" \n}\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - Acceptable inputs 7",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"phoneNumber\" : \"011 701 111 1234\" \n}\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - Acceptable inputs 8",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"phoneNumber\" : \"12345.12345\" \n}\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - Acceptable inputs 9",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"phoneNumber\" : \"011 1 703 111 1234\" \n}\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - My acceptable inputs 1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"phoneNumber\" : \"682-100-1000\" \n}\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - My acceptable inputs 2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"phoneNumber\" : \"+1 613-555-0178\" \n}\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - My acceptable inputs 3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"phoneNumber\" : \"+44 1632 960157\" \n}\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - My acceptable inputs 4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"phoneNumber\" : \"+353209120421\" \n}\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT Request deleteByNumber - Unacceptable inputs",
+			"item": [
+				{
+					"name": "deleteByNumber - Unacceptable inputs 1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\":\"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - Unacceptable inputs 2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\":\"1/703/123/1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - Unacceptable inputs 3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\":\"Nr 102-123-1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - Unacceptable inputs 4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\":\"7031111234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - Unacceptable inputs 5",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\":\"<script>alert(“XSS”)</script>\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - Unacceptable inputs 6",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\":\"+1234 (201) 123-1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - Unacceptable inputs 7",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\":\"(001) 123-1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - Unacceptable inputs 8",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\":\"+01 (703) 123-1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - Unacceptable inputs 9",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\":\"(703) 123-1234 ext 204\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - My unacceptable inputs 1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\":\"12345#\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - My unacceptable inputs 2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\":\"12345; DELETE from phonebook WHERE name='John Dale.';\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - My unacceptable inputs 3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\":\"+7777777777 77777777\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByNumber - My unacceptable inputs 3 Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phoneNumber\":\"=-40=35/43[o5-43 4/'53.';4k56;\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/PhoneBook/deleteByNumber",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"PhoneBook",
+								"deleteByNumber"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GET - PhoneBook/list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PhoneBook/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PhoneBook",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
